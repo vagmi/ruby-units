@@ -24,7 +24,7 @@ module Math
         unit_cbrt(n)
       end
     end
-    module_function :unit_cbrt
+    module_function :unit_cbrt rescue nil
     module_function :cbrt
   end
   
@@ -79,7 +79,7 @@ module Math
       unit_hypot(x,y)
     end
   end
-  module_function :unit_hypot
+  module_function :unit_hypot rescue nil
   module_function :hypot
   
   alias :unit_atan2 :atan2
